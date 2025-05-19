@@ -1,0 +1,8 @@
+go mod init modulo
+go mod tidy - remover dependencias não usadas
+go build - fazer o buld da aplicação go
+
+
+Concorrencia em go
+
+Concorrencia e paralelismo
