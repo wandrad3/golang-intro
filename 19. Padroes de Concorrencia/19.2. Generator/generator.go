@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-
 func main() {
 
 	canal := escrever("Hello, World!") //goroutine
@@ -15,16 +14,15 @@ func main() {
 	}
 }
 
-
-
-
-func escrever(texto string) <-chan {
+func escrever(texto string) <-chan string {
 	canal := make(chan string)
 	go func() {
 		for {
-			canal <- Sprintf("Valor recebido %s", texto)
+			canal <- fmt.Sprintf("Valor recebido %s", texto)
 			time.Sleep(500 * time.Millisecond)
 		}
 	}()
 	return canal
+
+	//funcao que gera o canal
 }
