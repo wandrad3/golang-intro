@@ -6,3 +6,7 @@ go build - fazer o buld da aplicação go
 Concorrencia em go
 
 Concorrencia e paralelismo
+
+Comando de teste
+
+    go test
